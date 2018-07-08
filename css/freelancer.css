@@ -378,3 +378,16 @@ a:focus, a:hover, a:active {
   background-color: #1a252f;
   border-color: #1a252f;
 }
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.portfolio-item img {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.mg-auto {
+  margin: auto;
+}
