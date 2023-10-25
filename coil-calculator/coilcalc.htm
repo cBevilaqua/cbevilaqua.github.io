@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Coil Calculator</title>
+<meta name="description" content="Coil Calculator">
+<meta name="keywords" content="Coil Calculator">
+<meta name="generator" content="Antenna 3.0">
+<meta http-equiv="imagetoolbar" content="no">
+<link rel="stylesheet" type="text/css" href="antenna.css" id="css">
+<style type="text/css">.abs {position:absolute}</style>
+<script type="text/javascript" src="antenna/auto.js"></script>
+<script type="text/javascript" src="coil_calculator.js"></script>
+</head>
+<body class="global ctt">
+<div class="ctr global" style="width:505px">
+<div id="lays394nbwem">
+<div id="pict017ujyfm" class="hid abs" style="left:0px; top:50px; width:505px; height:610px;">
+<img id="pict017ujyfmi" class="fil smf" src="coil_calc.jpg" alt="">
+</div>
+</div>
+
+<div id="lays482jnbuk">
+<div id="text489mgolx" class="aut abs" style="left:50px; top:65px; width:405px; height:88px;">
+ <p align="center"><span style="font-size: 47px"><font face="Comic Sans MS, cursive" color="#000080"><b>Coil Calculator</b></font></span></p>
+ </div>
+<div id="text494kgosh" class="aut abs" style="left:259px; top:170px; width:120px; height:32px;">
+ <p align="center"><span style="font-size: 19px"><font face="Comic Sans MS, cursive" color="#000080"><b><u>User Input</u></b></font></span></p>
+ </div>
+<div id="text498njqoi" class="aut abs" style="left:220px; top:350px; width:200px; height:32px;">
+ <p align="center"><span style="font-size: 19px"><font face="Comic Sans MS, cursive" color="#000080"><b><u>Calculated Result</u></b></font></span></p>
+ </div>
+<div id="butn509zluju" class="hid abs" style="left:176px; top:530px; width:162px; height:41px; cursor:pointer;" onmouseover="
+ rollOver('butn509zluju');" onmousedown="rollDown('butn509zluju');" onmouseout="rollOut('butn509zluju');" onmouseup="
+ rollUp('butn509zluju');
+ var data = [];
+data[0] = Math.round(document.getElementById('edtf549uiipf').value*1000)/1000;
+data[1] = Math.round(document.getElementById('edtf556htqoz').value*1000)/1000;
+data[2] = Math.round(document.getElementById('edtf558shbat').value*1000)/1000;
+calculate(data);
+document.getElementById('panl615celqi').innerHTML = data[3];
+document.getElementById('panl623hojcq').innerHTML = data[4];
+document.getElementById('panl624hkpsd').innerHTML = data[5];">
+<img id="butn509zlujui" class="fil opr smf" src="antenna/buttons/default/8cf04a97_up.png" alt=""><img
+ id="butn509zlujui2" class="fil trn inv smf" src="" alt="">
+<script type="text/javascript"><!--
+butnInit('butn509zluju','','','','' ); // --></script>
+</div>
+<div id="text512fndbp" class="aut abs" style="left:65px; top:220px; width:140px; height:29px;">
+ <p><span style="font-size: 16px"><font color="#000080" face="Comic Sans MS, cursive"><b>Inner Radius:</b></font></span></p>
+ </div>
+<div id="text516muglm" class="aut abs" style="left:65px; top:260px; width:140px; height:29px;">
+ <p><span style="font-size: 16px"><font face="Comic Sans MS, cursive" color="#000080"><b>Wire Thickness:</b></font></span></p>
+ </div>
+<div id="text516fozwu" class="aut abs" style="left:65px; top:300px; width:179px; height:29px;">
+ <p><span style="font-size: 16px"><font face="Comic Sans MS, cursive" color="#000080"><b>Number Of Turns:</b></font></span></p>
+ </div>
+<div id="text521ldurc" class="aut abs" style="left:65px; top:400px; width:179px; height:29px;">
+ <p><span style="font-size: 16px"><font face="Comic Sans MS, cursive" color="#000080"><b>Mean Radius:</b></font></span></p>
+ </div>
+<div id="text521ahkcu" class="aut abs" style="left:65px; top:440px; width:179px; height:29px;">
+ <p><span style="font-size: 16px"><font face="Comic Sans MS, cursive" color="#000080"><b>Coil Thickness:</b></font></span></p>
+ </div>
+<div id="text522cjdio" class="aut abs" style="left:65px; top:480px; width:179px; height:29px;">
+ <p><span style="font-size: 16px"><font face="Comic Sans MS, cursive" color="#000080"><b>Inductance:</b></font></span></p></div>
+<input type="text" id="edtf549uiipf" class="styl555ownrt frm abs" style="left:230px; top:220px; width:180px; height:25px;"
+ name="inner radius">
+<input type="text" id="edtf556htqoz" class="styl555ownrt frm abs" style="left:230px; top:260px; width:180px; height:25px;"
+ name="wire thickness">
+<input type="text" id="edtf558shbat" class="styl555ownrt frm abs" style="left:230px; top:300px; width:180px; height:25px;"
+ name="number of turns">
+<div id="text559ceaqu" class="aut abs" style="left:415px; top:220px; width:47px; height:34px;">
+ <p><span style="font-size: 16px"><font face="Comic Sans MS, cursive" color="#000080"><b>(mm)</b></font></span></p></div>
+<div id="text560xofdl" class="aut abs" style="left:415px; top:260px; width:47px; height:34px;">
+ <p><span style="font-size: 16px"><font face="Comic Sans MS, cursive" color="#000080"><b>(mm)</b></font></span></p></div>
+<div id="text561hmfla" class="aut abs" style="left:415px; top:400px; width:47px; height:34px;">
+ <p><span style="font-size: 16px"><font face="Comic Sans MS, cursive" color="#000080"><b>(mm)</b></font></span></p></div>
+<div id="text561oxvgj" class="aut abs" style="left:415px; top:440px; width:47px; height:34px;">
+ <p><span style="font-size: 16px"><font face="Comic Sans MS, cursive" color="#000080"><b>(mm)</b></font></span></p></div>
+<div id="text561hohwy" class="aut abs" style="left:415px; top:480px; width:47px; height:34px;">
+ <p><span style="font-size: 16px"><font face="Comic Sans MS, cursive" color="#000080"><b>(mH)</b></font></span></p></div>
+<div id="panl615celqi" class="pnl hid abs" style="left:230px; top:400px; width:180px; height:25px; border-style:inset;"></div>
+<div id="panl623hojcq" class="pnl hid abs" style="left:230px; top:440px; width:180px; height:25px; border-style:inset;"></div>
+<div id="panl624hkpsd" class="pnl hid abs" style="left:230px; top:480px; width:180px; height:25px; border-style:inset;"></div>
+<div id="text958hfrlh" class="aut abs" style="left:88px; top:587px; width:340px; height:31px;">
+ <p align="center"><span style="font-size: 14px"><font color="#000080" face="Comic Sans MS, cursive"><b>Copyright 2009 - Qiaozhi (Version 2.0)</b></font></span></p>
+ </div>
+</div>
+</div></body></html>
